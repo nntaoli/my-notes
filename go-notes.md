@@ -31,3 +31,13 @@ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 > 参数: -H windowsgui  
 
 `go build -ldflags "-H windowsgui"`
+
+## go mod一些配置
+#### 设置代理 
+> go env -w GOPROXY=https://goproxy.cn,direct
+#### 设置第三方包校验域名
+> go env -w GOSUMDB=gosum.io+ce6e7565+AY5qEHUk/qmHc5btzW45JVoENfazw8LielDsaI+lEbq6
+#### 关闭全局校验
+> go env -w GOSUMDB=off
+#### 设置私有库,私有库可以跳过代理和校验
+> go env -w GOPRIVATE=*.gitlab.com,*.gitee.com
