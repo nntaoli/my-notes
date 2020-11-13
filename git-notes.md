@@ -101,5 +101,7 @@
 
 #### git http/https proxy
 > git config --global http.proxy "proxyurl"    
-> git config --global https.proxy "proxyurl"    
+> git config --global https.proxy "proxyurl"  
 
+#### 保存用户名和密码,避免每次都需要输入密码
+> git config --global credential.helper store
