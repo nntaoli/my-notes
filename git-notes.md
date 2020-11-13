@@ -105,3 +105,7 @@
 
 #### 保存用户名和密码,避免每次都需要输入密码
 > git config --global credential.helper store
+
+#### gpg签名commit配置,全局配置加入`--global`参数
+> `git config  user.signingkey pub GPG key ID` //针对单个项目配置,绑定gpg公钥ID
+> `git config git config commit.gpgsign true` //开启gpg签名
