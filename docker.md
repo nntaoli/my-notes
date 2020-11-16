@@ -21,3 +21,7 @@
 >`-e` 设置环境变量    
 >`sh -c` 执行打包命令     
 >`ubuntu:golang.12.6` 是一个具体的docker镜像名称    
+
+7.运行时加入环境变量
+
+>`docker --env=GIT_SSL_NO_VERIFY=1 `
